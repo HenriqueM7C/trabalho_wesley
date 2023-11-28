@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviando Dados em um Formulário HTML</title>
+    <link rel="stylesheet" href="{{ url_for('static',
+ filename='static/estilo.css') }}">
+</head>
+
+<body>
+    <form method="POST">
+        <div>
+            <label>Linguagem: <input type="text" name="linguagem"></label>
+        </div>
+        <div>
+            <label>Framework: <input type="text" name="framework"></label>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+label {
+    color: blue;
+}
+
+input {
+    color: rgb(196, 255, 196);
+    background-color: rgb(26, 150, 26);
+    padding: 0.5rem;
+    width: 5rem;
+    border: none;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
