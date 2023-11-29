@@ -12,7 +12,7 @@ app = Flask(__name__)
 # "linguagem" : "Python",
 # "framework" : "Flask"
 # }
-@app.route('/teste/1', methods=['GET' , 'POST'])
+@app.route('/teste/1', methods=['POST'])
 def teste_json():
     objeto_json = request.get_json()
 
