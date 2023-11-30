@@ -1,6 +1,3 @@
-from flask import Flask, request
-
-app = Flask(__name__)
 
 # Importar a classe Flask e o objeto request:
 from flask import Flask, request, render_template
