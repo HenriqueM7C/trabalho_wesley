@@ -1,8 +1,10 @@
+#Importa as classes necessárias do módulo Flask para criar uma aplicação web e lidar com solicitações HTTP.
 from flask import Flask, request, jsonify
-
+# Criar o objeto Flask app:
 app = Flask(__name__)
 
 # Tabela de preços
+#criando um dicionário chamado tabela_precos
 tabela_precos = {
     1: {"produto": "Sapato", "preco": 99.99},
     2: {"produto": "Bolsa", "preco": 103.89},
@@ -12,6 +14,7 @@ tabela_precos = {
 }
 
 @app.route('/teste/1', methods=['POST'])
+#def é uma palavra-chave em Python que é usada para definir uma função.
 def consultar_preco():
     try:
         dados_json = request.get_json()
