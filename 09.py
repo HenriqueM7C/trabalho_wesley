@@ -1,4 +1,3 @@
-
 # Importar a classe Flask e o objeto request:
 from flask import Flask, request, render_template
 
@@ -15,11 +14,14 @@ app = Flask(__name__)
 def teste_dados_formulario_html():
     # Trata a requisição com método POST:
     if request.method == 'POST':
+        #request.form.get é usado em Flask para obter dados de um formulário HTML 
         linguagem = request.form.get('linguagem')
         framework = request.form.get('framework')
         # Ou:
         # linguagem = request.form['linguagem']
         # framework = request.form['framework']
+        #é uma função em Flask que é usada para renderizar modelos (templates) HTML
+        #linguagem_usr=linguagem é usada para criar ou atualizar uma variável chamada linguagem_usr
         return render_template('resposta.html', linguagem_usr=linguagem,
                                framework_usr=framework)
     # Caso contrário, trata a requisição com método GET:
