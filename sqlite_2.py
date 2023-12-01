@@ -129,3 +129,9 @@ def deletar_produto(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+    #"nome": "Produto1",
+  #"descricao": "Descrição do Produto1",
+  #"fornecedor": "Fornecedor1",
+  #"preco": 29.99,
+  #"quantidade": 100
