@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import sqlite3
 
 app = Flask(__name__)
+#atribuindo o nome do arquivo do banco de dados à variável DATABASE
 DATABASE = 'produtos.db'
 
 # Função para conectar ao banco de dados SQLite
@@ -10,6 +11,7 @@ def connect_db():
 
 # Criação da tabela 'produtos' se ela não existir
 def create_table():
+    #gerencia conexão com banco de dados
     with connect_db() as connection:
         cursor = connection.cursor()
         cursor.execute('''
